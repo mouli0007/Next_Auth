@@ -3,10 +3,17 @@
 			
 			
 			NextAuth.js is a complete open-source authentication solution for Next.js applications. 
-        It is designed from the ground up to support Next.js and Serverless.10-Feb-2023
+        It is designed from the ground up to support Next.js and Serverless
+
+	Pros : 
 
         1=> it provides both server and client side validations! 
         2=> it also provvides auth tokens for validations
+	3=> It will also provides you JWT Tokens
+
+	Cons :
+
+        1=> But it will not create a user for us we have to come up with our own logic !
 
 		   
 		   ######### Syntax #########
