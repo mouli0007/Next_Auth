@@ -1,5 +1,5 @@
 ##############################################################
-		############ Next Auth Route Protection ###################
+		############ Next Auth Route Protection Client ###################
 		
 		
 		1=> Select the pages where you want to make a protected routing
@@ -7,10 +7,14 @@
 		
 		#### Syntax ####
 		
+		##############################################
+		####### We Dont Want to use UseSession ##########
 		############ USE Session #################			
 	 ###### import { useSession } from "next-auth/client"; 
 	 
 	 const [session,loading] = useSession()
+	 
+	 
 	 
 	 ##### The Data in the session and loading will be changed if the data was fetched
 	       or else the data will remian same
@@ -26,3 +30,4 @@
 	 ##### import {getSession } from "next-auth/client";
 
 		getSession()=> will send a new request and takes the latest session data
+		
