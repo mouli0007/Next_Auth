@@ -29,7 +29,10 @@ async function handler(req, res) {
 
   // Getting the Datas we need !
 
+// 	Data from the session
   const userEmail = session.user.email;
+	
+// 	Data from the Client
   const oldPassword = req.body.oldPassword;
   const newPAssword = req.body.newPassword;
 
