@@ -6,9 +6,25 @@
 		   u want to allow only authenticated users to do it 
 		   for that we need to protect our API Route
 
+		   ######################## Sending Data From Client Side ###########################3
 		   
+    async function changePasswordHandler(passwordData) {
+    const response = await fetch("/api/user/change-password", {
+      method: "PATCH",
+      body: JSON.stringify(passwordData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const data = await response.json();
+    console.log(data);
+  }
 		   
-		   import { getSession } from "next-auth/client";
+
+###################### Validating the Data in the Server ##############################3
+
+import { getSession } from "next-auth/client";
 import { hashPassword, verifyPassword } from "../../../../lib/auth";
 import { connectToDatabase } from "../../../../lib/db";
 
